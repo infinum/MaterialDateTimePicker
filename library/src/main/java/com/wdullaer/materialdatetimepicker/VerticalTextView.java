@@ -2,6 +2,7 @@ package com.wdullaer.materialdatetimepicker;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -12,7 +13,7 @@ import android.widget.TextView;
  * happens before the View is rotated causing incorrect View boundaries)
  * Created by wdullaer on 28/03/16.
  */
-public class VerticalTextView extends TextView {
+public class VerticalTextView extends AppCompatTextView {
     final boolean topDown;
 
     public VerticalTextView(Context context, AttributeSet attrs){
