@@ -18,11 +18,11 @@ public class Timepoint implements Parcelable, Comparable<Timepoint> {
     private int minute;
     private int second;
 
-    public enum TYPE {
-        HOUR,
-        MINUTE,
-        SECOND
-    }
+    public static int HOUR = 1;
+    public static int MINUTE = 2;
+    public static int SECOND = 3;
+
+    public @interface type{}
 
     public Timepoint(Timepoint time) {
         this(time.hour, time.minute, time.second);
